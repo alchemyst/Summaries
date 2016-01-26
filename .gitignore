@@ -1,3 +1,10 @@
+# Latex generated files
+*.pdf
+*.aux
+*.out
+*.txt
+*.gz
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

@@ -1,0 +1,12 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: all_summaries.aux
+The style file: unsrt.bst
+Illegal, another \bibstyle command---line 27 of file all_summaries.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 28 of file all_summaries.aux
+ : \bibdata
+ :         {../../../Research/library}
+I'm skipping whatever remains of this command
+Database file #1: ../../../Research/library.bib
+(There were 2 error messages)
