@@ -4,6 +4,9 @@
 *.out
 *.txt
 *.gz
+*.bbl
+*.blg
+*.log
 
 # Windows image file caches
 Thumbs.db
