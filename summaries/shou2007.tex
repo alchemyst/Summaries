@@ -1,4 +1,31 @@
-\documentclass[../compilation_of_summaries/all_summaries.tex]{subfiles}
+\documentclass[float=false, crop=false]{standalone}
+\linespread{1.3}
+
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+\usepackage{parskip}
+\setlength{\parindent}{0pt} %no paragraph indentation
+\setlength{\parskip}{2.1ex plus 0.2ex minus 0.2ex} %3x paragraph spacing
+
+\usepackage{geometry}
+\geometry{letterpaper,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+
+\usepackage{hyperref}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+\graphicspath{{./imgs/}}
+
 \begin{document}
 	In \cite{Shou2007} the authors develop a synthetic obligatory cooperating system of two non-mating (naturally non-interactive) yeast cell populations. The authors engineer two straings of Saccharomyces cerevisiae with different metabolic capabilities. The first strain, called R, requires adenine to grow but synthesis lysine at normal levels. The second straing, called Y, requires lysine to grow but produces adenine at normal levels. Thus, without intervention both strains become extinct in isolation. 
 	
@@ -10,4 +37,10 @@
 			\label{fig:shou2007_popden}
 		\end{figure}   
 	Since the enzymes are only released upon cell death and the R strain can survive for much longer than the Y strain, it was found there existed minimum initial cell density constraints to ensure co-culture viability. Interestingly, the authors found that, irrespective of (viable) initial conditions, the co-cultures converged to a single stable population density ratio. The authors also found, upon long term culturing, the initial cell density required for co-culture viability was reduced. 
+	
+	\ifstandalone
+		\bibliographystyle{unsrt}	
+		\bibliography{../../../Research/library}
+	\fi
+	
 \end{document}

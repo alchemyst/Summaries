@@ -1,5 +1,37 @@
-\documentclass[../compilation_of_summaries/all_summaries.tex]{subfiles}
+\documentclass[float=false, crop=false]{standalone}
+\linespread{1.3}
+
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+\usepackage{parskip}
+\setlength{\parindent}{0pt} %no paragraph indentation
+\setlength{\parskip}{2.1ex plus 0.2ex minus 0.2ex} %3x paragraph spacing
+
+\usepackage{geometry}
+\geometry{letterpaper,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+
+\usepackage{hyperref}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+\graphicspath{{./imgs/}}
+
 \begin{document}
 	In the review paper \cite{Brenner2008} the authors discuss recent trends in microbial consortia engineering. The authors highlight that consortia is attractive because more complex and robust processes can be designed using multiple microbes than can be done with a single microbe. To facilitate the robust execution of complex tasks communication is important. Two primary methods of inter-cellular communication are discussed. In the first type different cells exchange dedicated molecular signals (active signaling - see \cite{Balagadde2008}) and in the second type cells communicate by trading metabolites (passive signaling - see \cite{Shou2007}). The authors highlight several challenges: natural microbial communities can maintain homeostasis while long term stability is difficult in synthetic consortia, horizontal gene transfer can change the characteristics of the community and finally organisms recalcitrant to genetic modification often seem to be important in natural consortia.
+
+	\ifstandalone
+		\bibliographystyle{unsrt}	
+		\bibliography{../../../Research/library}
+	\fi
 	
 \end{document}

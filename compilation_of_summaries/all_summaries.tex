@@ -1,7 +1,8 @@
 \documentclass[11pt,fleqn]{article}
 \linespread{1.3}
 
-\usepackage{subfiles}
+\usepackage[subpreambles=false]{standalone}
+\usepackage{import}
 
 \usepackage{parskip}
 \setlength{\parindent}{0pt} %no paragraph indentation
@@ -31,10 +32,13 @@
 \maketitle
 
 % Add a subfile command for each summary you add
-\subfile{../summaries/brenner2008}
-\subfile{../summaries/balagadde2008}
-\subfile{../summaries/shou2007}
-\subfile{../summaries/kambam2008}
+\import{../summaries/}{brenner2008}
+\import{../summaries/}{balagadde2008}
+\import{../summaries/}{kambam2008}
+\import{../summaries/}{shou2007}
+\import{../summaries/}{desai2007}
+% End week
+
 
 \bibliographystyle{unsrt}
 \bibliography{../../../Research/library}
