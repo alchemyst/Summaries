@@ -1,0 +1,38 @@
+\documentclass[float=false, crop=false]{standalone}
+\linespread{1.3}
+
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+\usepackage{parskip}
+\setlength{\parindent}{0pt} %no paragraph indentation
+\setlength{\parskip}{2.1ex plus 0.2ex minus 0.2ex} %3x paragraph spacing
+
+\usepackage{geometry}
+\geometry{letterpaper,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+
+\usepackage{hyperref}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+\graphicspath{{./imgs/}}
+
+\begin{document}
+
+	The review paper \cite{Pai2009} discusses recent trends in synthetic biology, specifically inter-cellular communication strategies. The authors found that the most popular form of inter-cellular communication takes place via a cell density measuring mechanism i.e. quorum sensing. The \textit{LuxI}/\textit{LuxR} genes, commonly found in Gram-negative bacteria, are most frequently used. These genes produce small AHL molecules which freely diffuse out of the cell. A salient feature of many quorum sensing modules is the stabilization of the \textit{LuxR} homologs (R-protein) upon AHL binding. Normally the R-protein has a short half life, but upon binding by its cognate signal the half life is increased significantly. This apparently wasteful mechanism is theorized to reduce signaling variability via a mechanism called diffusional dissipation. Another potential benefit of the R-protein instability is signal discrimination. In nature a diverse set of AHL based signaling molecules exist. It is desirable to prevent high concentrations of non-cognate AHL molecules from inducing gene expression, a phenomenon called cross talk. Asymmetric binding of unstable R-proteins with the AHL has been found, at least theoretically, to reduce this phenomenon. This discrimination mechanism is called kinetic proofreading.  
+
+	\ifstandalone
+		\bibliographystyle{unsrt}	
+		\bibliography{../../../Research/library}
+	\fi
+
+\end{document}
