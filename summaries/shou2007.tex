@@ -25,12 +25,13 @@
 
 \usepackage{graphicx}
 \graphicspath{{./imgs/}}
+\usepackage{float}
 
 \begin{document}
 	In \cite{Shou2007} the authors develop a synthetic obligatory cooperating system of two non-mating (naturally non-interactive) yeast cell populations. The authors engineer two straings of Saccharomyces cerevisiae with different metabolic capabilities. The first strain, called R, requires adenine to grow but synthesis lysine at normal levels. The second straing, called Y, requires lysine to grow but produces adenine at normal levels. Thus, without intervention both strains become extinct in isolation. 
 	
 	The authors found that it is necessary for each strain to overproduce its respective enzyme for cooperation to be successful. This was achieved by removing the natural end-product feedback inhibition system in each culture. The authors noted that the intrinsic asymmetric starvation tolerance between the two strains placed constraints that restrict cooperation. The R strain is able to survive much longer than the Y strain without supplementary enzymes. This mismatch caused an initial loss in culture viability. However, after some dead-time (at very low Y cell density) the cooperation becomes effective, see figure \ref{fig:shou2007_popden}.
-		\begin{figure}[h]
+		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.8\textwidth]{shou2007_popden.png}
 			\caption{Predator Prey gene circuits.}

@@ -25,10 +25,11 @@
 
 \usepackage{graphicx}
 \graphicspath{{./imgs/}}
+\usepackage{float}
 
 \begin{document}
 	The paper \cite{Balagadde2008} describes the synthetic construction of a predator prey system composed of two engineered E. coli microbes. Through introducing two quorum sensing (cell density sensing) modules from Vibrio fischeri (the LuxI/LuxR genes) and Pseudomonas aeruginosa (the LasI/LasR genes) the authors are able to construct a predator E. coli which grows at the cost of the prey E. coli. The predator microbe naturally produces a suicide protein (ccdB) which is inhibited (the antidote ccdA is promoted in the predator) by the expression of a the LuxI gene in the prey. Thus higher cell densities of the prey lead to higher cell densities of the predator. However, the predator cells express the LasI gene which promote the expression of the suicide gene in the prey microbes. This interaction is communicated through acyl-homoserine lacton; see figure \ref{fig:balagadde2008_genecircuits}.  
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.8\textwidth]{balagadde2008_genecircuits.png}
 		\caption{Predator Prey gene circuits.}
