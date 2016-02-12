@@ -1,0 +1,38 @@
+\documentclass[float=false, crop=false]{standalone}
+\linespread{1.3}
+
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+\usepackage{parskip}
+\setlength{\parindent}{0pt} %no paragraph indentation
+\setlength{\parskip}{2.1ex plus 0.2ex minus 0.2ex} %3x paragraph spacing
+
+\usepackage{geometry}
+\geometry{letterpaper,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+
+\usepackage{hyperref}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+\graphicspath{{./imgs/}}
+\usepackage{float}
+
+\begin{document}
+	The review paper \cite{Bacchus2013} highlights recent advances in synthetic biology. The authors highlight the shift in engineering only a single cell to a multicellular consortia approach. The benefits of this approach are: the workload required of the system can be divided and a plug-and-play approach, using previously developed genetic modules, can be used to engineer new cells. The authors discuss recent advances in yeast, bacteria and mammalian synthetic biology.
+
+	\ifstandalone
+		\bibliographystyle{unsrt}	
+		\bibliography{../../../Research/library}
+	\fi
+
+\end{document}

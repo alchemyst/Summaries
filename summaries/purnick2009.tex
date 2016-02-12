@@ -1,0 +1,38 @@
+\documentclass[float=false, crop=false]{standalone}
+\linespread{1.3}
+
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+\usepackage{parskip}
+\setlength{\parindent}{0pt} %no paragraph indentation
+\setlength{\parskip}{2.1ex plus 0.2ex minus 0.2ex} %3x paragraph spacing
+
+\usepackage{geometry}
+\geometry{letterpaper,left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\thepage}
+
+\usepackage{hyperref}
+
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+\graphicspath{{./imgs/}}
+\usepackage{float}
+
+\begin{document}
+	The review paper \cite{Purnick2009} highlights the evolution of synthetic biology. The authors delineate how the focus of current research has changed from engineering basic elements and modules to one where the focus is on engineering complex systems of the aforementioned modules. In the so-called first wave of synthetic biology modular switches, cascades, pulse generators etc. were developed by using an iterative design procedure: a system would be proposed (sometimes modeled mathematically) and then experimentally tested; the system's design would then be changed if required. A library of standard genetic elements has since been compiled from verified research. The so--called second wave of synthetic biology is concerned with combining these ``standardised parts" into complex biological machinery. However, the authors note that the complexity of biological circuits has not kept pace with the basic module development. The authors suggest that issues like cell death, crosstalk, mutations and noisy intracellular, intercellular and extracellular conditions have slowed the progress of developing complex interacting circuits. Perfect models of biology do not currently exist due to the inherent stochasticity and complexity of even the most studied microbes. An iterative design is usually employed to design genetic circuits; the authors note that global sensitivity analysis will become more prominent as it becomes impractical to test all, or even a small amount, of the possible combinations of design elements.
+
+	\ifstandalone
+		\bibliographystyle{unsrt}	
+		\bibliography{../../../Research/library}
+	\fi
+
+\end{document}
